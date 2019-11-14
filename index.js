@@ -32,6 +32,7 @@ ReactDOM.render(
       transitionDuration={250}
       theme={theme}
       progress={"none"}
+      showFullscreenControl={false}
     >
       {slides.map((S, i) => {
         let transition = transitions[i] || null;

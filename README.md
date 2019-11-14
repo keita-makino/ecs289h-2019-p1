@@ -1,69 +1,9 @@
-[![Maintenance Status][maintenance-image]](#maintenance-status)
+# ecs289h-2019-p1
 
-# Spectacle Boilerplate
+As a presentation 1 of [ECS289H 2019 Fall: Immersive Visualization](https://web.cs.ucdavis.edu/~ma/ECS289H/).
 
-## Contents
+# References
 
-- [Reference](#reference)
-- [Getting Started](#getting-started)
-- [Build & Deployment](#build-deployment)
-
-## Reference
-
-The Spectacle core API is available at [https://github.com/FormidableLabs/spectacle/blob/master/README.md](https://github.com/FormidableLabs/spectacle/blob/master/README.md).
-
-For more information about MDX syntax and how it all works, check out the [MDX documentation](https://mdxjs.com/).
-
-### Slides
-
-Slides are separated with `---`.
-
-To customize specific MDX functionality in Spectacle Boilerplate MDX, including what characters are used to demarcate slide breaks, refer to the `loader.js` file. We don't recommend altering this functionality unless necessary.
-
-## Getting Started
-
-After downloading the boilerplate, your first order of business is to open a terminal and run 
-```bash
-yarn
-```
-or 
-```bash
-npm install
-```
-
-Next, run 
-```bash
-rm -R .git
-```
-to remove the existing version control.
-
-Then, to start up the local server, run
-```bash
-yarn start
-```
-or
-```bash
-npm start
-```
-
-Open a browser and hit [http://localhost:3000](http://localhost:3000), and you're ready to roll. Modify `index.mdx` to see changes, but the best part about MDX is that you can create your own React components and import them into the `index.mdx` file to seamlessly integrate with markdown!
-
-## Build & Deployment
-
-Building the dist version of the project is as easy as running
-```bash
-npm run build
-```
-
-If you want to deploy the slideshow to surge, run 
-```bash
-npm run deploy
-```
-
-
-## Maintenance Status: Active
-
-Formidable is actively working on this project, and we expect to continue for work for the foreseeable future. Bug reports, feature requests and pull requests are welcome. 
-
-[maintenance-image]: https://img.shields.io/badge/maintenance-active-green.svg
-
+- Yang, Y., Dwyer, T., Jenny, B., Marriott, K., Cordeil, M., & Chen, H. (2018). Origin-destination flow maps in immersive environments. IEEE transactions on visualization and computer graphics, 25(1), 693-703.
+- Google. (n.d.). Google Maps. Retrieved from https://www.google.com/maps/@38.5347497,-121.7543652,15z (Accessed: 11/14/2019)
+- Huang, Z., Wu, X., Garcia, A. J., Fik, T. J., & Tatem, A. J. (2013). An open-access modeled passenger flow matrix for the global air network in 2010. PloS one, 8(5), e64317.

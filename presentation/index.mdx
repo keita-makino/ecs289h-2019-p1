@@ -1,4 +1,4 @@
-import { Cite, Notes, Slide, MarkdownSlides } from "spectacle";
+import { Cite, Notes, Slide, MarkdownSlides, List, ListItem,Appear } from "spectacle";
 import { DarkSlide, CodeSlide } from "./slides";
 import RegularComponent from "./regular-component";
 
@@ -14,39 +14,77 @@ export default DarkSlide;
 
 # Outline
 
-- Introduction
-- Visualization Methods
-- Flows on Flat Maps
-- Flows on Flat Maps, Globes and Map Pairs
-- Dense Flow Data Sets
+1. Introduction
+2. Flows on Flat Maps
+3. Flows on Flat Maps, Globes and Map Pairs
+4. Dense Flow Data Sets
 
 <Notes>hgehogehogeho</Notes>
 
 ---
 
-
-
----
-
-<RegularComponent />
+# 1. Introduction
 
 ---
 
-###### Typography
+## 2D Map
 
-# Heading 1
+<br />
+<img src={require("../assets/2.png")} width={"100%"} />
+<p style={{ fontSize: '18px', textAlign:"right" }}>
+Google. (n.d.). Google Maps. Retrieved from https://www.google.com/maps/@38.5347497,-121.7543652,15z (Accessed: 11/14/2019)
+</p>
 
-## Heading 2
+---
 
-### Heading 3
+## 2D Flow Map
 
-#### Heading 4
+<br />
+<img src={require("../assets/1.png")} width={"100%"} />
+<p style={{ fontSize: '18px', textAlign:"right" }}>
+Huang, Z., Wu, X., Garcia, A. J., Fik, T. J., & Tatem, A. J. (2013). An open-access modeled passenger flow matrix for the global air network in 2010. PloS one, 8(5), e64317.
+</p>
+---
 
-##### Heading 5
+# 3D Flow Map?
 
-###### Heading 6
+<List>
+  <Appear><ListItem>Less Clutter</ListItem></Appear>
+  <Appear><ListItem>Occlusion Control by Motion</ListItem></Appear>
+  <Appear><ListItem>Use Height for Additional Info</ListItem></Appear>
+  <Appear><ListItem>Resolve Ambiguity</ListItem></Appear>
+</List>
 
-Standard Text
+---
+
+# 2. Flows on Flat Map
+
+---
+
+## Two 2D + Three 3D Models
+<img src={require("../assets/3.png")} width={"100%"} />
+
+---
+
+<img src={require("../assets/4.1.jpg")} width={"100%"} />
+
+---
+
+<img src={require("../assets/4.2.jpg")} width={"100%"} />
+
+---
+
+<img src={require("../assets/4.3.jpg")} width={"100%"} />
+
+---
+
+<img src={require("../assets/4.4.jpg")} width={"100%"} />
+
+---
+
+<img src={require("../assets/4.5.jpg")} width={"100%"} />
+
+---
 
 ---
 
