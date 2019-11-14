@@ -1,6 +1,7 @@
 import { Cite, Notes, Slide, MarkdownSlides, List, ListItem,Appear } from "spectacle";
 import { DarkSlide, CodeSlide } from "./slides";
 import RegularComponent from "./regular-component";
+import "./index.css";
 
 ## Origin-Destination Flow Maps in Immersive Environments
 
@@ -14,10 +15,13 @@ export default DarkSlide;
 
 # Outline
 
-1. Introduction
-2. Flows on Flat Maps
-3. Flows on Flat Maps, Globes and Map Pairs
-4. Dense Flow Data Sets
+
+<List ordered ={true}>
+  <ListItem>Introduction</ListItem>
+  <ListItem>Flows on Flat Map</ListItem>
+  <ListItem>Flows on Flat Map, Globe and MapsLink</ListItem>
+  <ListItem>Dense Flow Data Sets</ListItem>
+</List>
 
 <Notes>hgehogehogeho</Notes>
 
@@ -86,29 +90,115 @@ Huang, Z., Wu, X., Garcia, A. J., Fik, T. J., & Tatem, A. J. (2013). An open-acc
 
 ---
 
----
+## Task + Evaluation
 
-###### Standard List
-
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-
----
-
-> Example Quote
-
-<Cite>Author</Cite>
+- Compare the width of randomly selected two flows
+- 40/80 flows, 10%/20% of width difference
+- 20 participants (12M, 8F), 5 trials each task
+- "*For the two flows from A to B and X to Y, which is greater?*"
+- Two tasks in a set: **search** + **comparison**
+- Evaluation through accuracy and time
 
 ---
 
-export default CodeSlide;
+## Result
+<br />
+<img src={require("../assets/6.png")} width={"100%"} />
 
-```javascript
-class SuperCoolComponent extends React.Component {
-  render() {
-    return <p>code slide works in markdown too whaaaaat</p>;
-  }
-}
-```
+<List>
+  <Appear><ListItem>3D models takes longer, but more precise</ListItem></Appear>
+  <Appear><ListItem>Distance model is best among 3D models</ListItem></Appear>
+</List>
+
+---
+
+## View Angle
+<br />
+<img src={require("../assets/7.jpg")} width={"100%"} />
+
+---
+
+# 3. Flows on Flat Map, Globe and MapsLink
+
+---
+
+## One "Globe" + One "MapsLink"
+<br />
+<img src={require("../assets/12.jpg")} width={"100%"} />
+
+---
+
+<img src={require("../assets/5.1.jpg")} width={"100%"} />
+
+---
+
+<img src={require("../assets/5.2.jpg")} width={"100%"} />
+
+---
+
+## Task + Evaluation
+
+- Same task to the previous section
+- Higher density (80/120 flows)
+- 20 participants (14M, 6F), 5 trials each task
+
+---
+
+## Result
+<br />
+<img src={require("../assets/8.png")} width={"100%"} />
+
+<List>
+  <Appear><ListItem>Globe model further better than 3D distance model</ListItem></Appear>
+  <Appear><ListItem>MapsLink is worst in everything</ListItem></Appear>
+</List>
+
+---
+
+# 4. Dense Flow Data Sets
+
+---
+
+## Will they handle **much** denser map?
+
+- Increase the number of flows to 200/300
+- Examine the accuracy and time
+- 12 participants (6M, 6F), 8 trials each task
+
+---
+
+<img src={require("../assets/10.1.jpg")} width={"100%"} />
+
+---
+
+<img src={require("../assets/10.2.jpg")} width={"100%"} />
+
+---
+
+## Result
+<br />
+<img src={require("../assets/9.png")} width={"100%"} />
+
+<List>
+  <Appear><ListItem>Globe model keeps high accuracy</ListItem></Appear>
+  <Appear><ListItem>2D/3D models take much longer time</ListItem></Appear>
+</List>
+
+---
+
+# Conclusion
+
+---
+
+<List>
+  <Appear><ListItem>2D flow map is <i>not</i> the best way</ListItem></Appear>
+  <Appear><ListItem>3D flow map could solve the issue of overlapping</ListItem></Appear>
+  <Appear><ListItem>Different 3D visualization significantly affects the performance</ListItem></Appear>
+  <Appear><ListItem><b><i>Intuitive >> Innovative?</i></b></ListItem></Appear>
+</List>
+
+---
+
+# Thank you!
+
+
